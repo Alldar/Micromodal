@@ -1,10 +1,25 @@
 {
-  "extends": "standard",
-  "rules": {
-    "template-curly-spacing": [
+  "extends" : "standard",
+  "rules"   : {
+    "template-curly-spacing" : [
       "error",
       "always"
     ],
-    "quotes": [2, "single", { "avoidEscape": true }]
+    "no-multi-spaces"        : [
+      "error",
+      {
+        "exceptions" : {
+          "VariableDeclarator" : true,
+          "ImportDeclaration"  : true
+        }
+      }
+    ],
+    "quotes"                 : [
+      2,
+      "single",
+      {
+        "avoidEscape" : true
+      }
+    ]
   }
 }

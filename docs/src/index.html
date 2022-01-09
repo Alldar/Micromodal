@@ -33,10 +33,10 @@
   <meta name="twitter:image:width" content="1200">
   <meta name="twitter:image:height" content="630">
 
-  <script type="module"src="https://www.googletagmanager.com/gtag/js?id=UA-49604576-5"></script>
+  <script type="module" src="https://www.googletagmanager.com/gtag/js?id=UA-49604576-5"></script>
   <script type="module">
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments) };
+    function gtag() { dataLayer.push(arguments) }
     gtag('js', new Date());
     gtag('config', 'UA-49604576-5');
   </script>
@@ -295,7 +295,7 @@ MicroModal.init();
         <div class="bg-washed-green tc">
           <div class="mv5 dib">
 
-            <a class="f5 fw6 db dark-green underline no-underline-hover js-modal-trigger" href="javascript:;">
+            <a class="f5 fw6 db dark-green underline no-underline-hover js-modal-trigger" href="javascript:">
               Trigger Modal
             </a>
 
@@ -366,10 +366,11 @@ MicroModal.init({
   closeTrigger: 'data-custom-close', // [4]
   openClass: 'is-open', // [5]
   disableScroll: true, // [6]
-  disableFocus: false, // [7]
-  awaitOpenAnimation: false, // [8]
-  awaitCloseAnimation: false, // [9]
-  debugMode: true // [10]
+  disableScrollElement: [], // [7]
+  disableFocus: false, // [8]
+  awaitOpenAnimation: false, // [9]
+  awaitCloseAnimation: false, // [10]
+  debugMode: true // [11]
 });
         </code></pre>
 
@@ -407,9 +408,15 @@ MicroModal.init({
             </p>
           </li>
           <li class="pl4 pv3">
-            <strong class="fw5">disableScroll</strong> <code>boolean</code>
+            <strong class="fw5">disableScroll</strong> <code>array</code>
             <p>
-              This disables scrolling on the page while the modal is open. The default value is <code>false</code>
+              This disables scrolling on the page while the modal is open. The default value is <code>[]</code>
+            </p>
+          </li>
+          <li class="pl4 pv3">
+            <strong class="fw5">disableScrollElement</strong> <code>boolean</code>
+            <p>
+              The list of elements that need to be shifted when opening a modal window, by the width equal to the scrollbar
             </p>
           </li>
           <li class="pl4 pv3">
