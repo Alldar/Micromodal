@@ -368,9 +368,10 @@ MicroModal.init({
   disableScroll: true, // [6]
   disableScrollElement: [], // [7]
   disableFocus: false, // [8]
-  awaitOpenAnimation: false, // [9]
-  awaitCloseAnimation: false, // [10]
-  debugMode: true // [11]
+  backFocus: true, // [9]
+  awaitOpenAnimation: false, // [10]
+  awaitCloseAnimation: false, // [11]
+  debugMode: true // [12]
 });
         </code></pre>
 
@@ -423,6 +424,12 @@ MicroModal.init({
             <strong class="fw5">disableFocus</strong> <code>boolean</code>
             <p>
               Disable auto focus on first focusable element. Default is <code>false</code>
+            </p>
+          </li>
+          <li class="pl4 pv3">
+            <strong class="fw5">backFocus</strong> <code>boolean</code>
+            <p>
+              Returns focus to the element when the modal is closed. Default is <code>true</code>
             </p>
           </li>
           <li class="pl4 pv3">
